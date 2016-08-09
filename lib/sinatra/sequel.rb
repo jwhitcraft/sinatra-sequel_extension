@@ -50,7 +50,7 @@ module Sinatra
 
     def database
       @database ||=
-        Sequel.connect(database_url, :encoding => 'utf-8')
+        Sequel.connect(database_url, :encoding => 'utf8')
     end
 
     # Creates a migration with the given +name+. Returns if a migration by
