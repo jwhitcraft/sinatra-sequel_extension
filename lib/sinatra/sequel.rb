@@ -29,7 +29,7 @@ require 'sequel'
 module Sinatra
   module SequelHelper
     def database
-      options.database
+      settings.database
     end
   end
 
